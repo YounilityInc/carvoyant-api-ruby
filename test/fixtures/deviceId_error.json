@@ -1,0 +1,13 @@
+{
+    "error": {
+        "httpStatus": 500,
+        "errorCode": "CANNOTPERSIST",
+        "detail": "Could not add vehicle.",
+        "errorDisplay": "Could not add vehicle.",
+        "fieldErrors": [{
+            "fieldName": "deviceId",
+            "errorCode": "UNIQUE",
+            "errorDisplay": "The deviceId is in use by another vehicle."
+        }]
+    }
+}

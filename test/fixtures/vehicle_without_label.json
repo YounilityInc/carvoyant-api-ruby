@@ -1,0 +1,20 @@
+{
+    "vehicle": {
+        "name": "2014 Mazda Mazda2 Sport",
+        "vehicleId": 2230,
+        "deviceId": "C201401288",
+        "vin": "JM1DE1KY5E0181759",
+        "mileage": 168.0,
+        "lastWaypoint": {
+            "timestamp": "20150429T111112+0000",
+            "latitude": 45.330392,
+            "longitude": -75.723559
+        },
+        "lastRunningTimestamp": "20150429T110132+0000",
+        "year": "2014",
+        "make": "Mazda",
+        "model": "Mazda2",
+        "autoAssignDevice": true,
+        "mil": false
+    }
+}

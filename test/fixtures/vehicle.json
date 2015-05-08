@@ -1,0 +1,22 @@
+{
+    "vehicle": {
+        "name": "2014 Ford Focus SE",
+        "label": "Ryan Cassels",
+        "vehicleId": 2230,
+        "deviceId": "C201401286",
+        "vin": "1FADP3F2XEL352103",
+        "mileage": 1238.0,
+        "lastWaypoint": {
+            "timestamp": "20150415T174210+0000",
+            "latitude": 45.330289,
+            "longitude": -75.723374
+        },
+        "lastRunningTimestamp": "20150415T174210+0000",
+        "year": "2014",
+        "make": "Ford",
+        "model": "Focus",
+        "autoAssignDevice": true,
+        "mil": false
+    }
+}
+ 

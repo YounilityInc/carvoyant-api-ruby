@@ -1,0 +1,7 @@
+{
+    "error":
+        {
+            "httpStatus": 500,
+            "detail": "Unknown error has occured."
+        }
+}

@@ -1,0 +1,103 @@
+{
+    "vehicle": [{
+        "name": "Unidentified Vehicle",
+        "label": "Paul Robertson(old)",
+        "vehicleId": 2229,
+        "mileage": 163857.0,
+        "lastWaypoint": {
+            "timestamp": "20150413T215800+0000",
+            "latitude": 45.330372,
+            "longitude": -75.723658
+        },
+        "running": true,
+        "lastRunningTimestamp": "20150427T183809+0000",
+        "autoAssignDevice": true,
+        "mil": false
+    }, {
+        "name": "2014 Ford Focus SE",
+        "label": "Ryan Cassels",
+        "vehicleId": 2230,
+        "deviceId": "C201401286",
+        "vin": "1FADP3F2XEL352103",
+        "mileage": 1238.0,
+        "lastWaypoint": {
+            "timestamp": "20150415T174210+0000",
+            "latitude": 45.330289,
+            "longitude": -75.723374
+        },
+        "lastRunningTimestamp": "20150415T160918+0000",
+        "year": "2014",
+        "make": "Ford",
+        "model": "Focus",
+        "autoAssignDevice": true,
+        "mil": false
+    }, {
+        "name": "2013 Mazda Mazda5 Touring",
+        "label": "Chris Cameron",
+        "vehicleId": 2249,
+        "vin": "JM1CW2CLXD0155495",
+        "mileage": 3034.0,
+        "lastWaypoint": {
+            "timestamp": "20150426T172546+0000",
+            "latitude": 45.330408,
+            "longitude": -75.723596
+        },
+        "running": true,
+        "lastRunningTimestamp": "20150427T183809+0000",
+        "year": "2013",
+        "make": "Mazda",
+        "model": "Mazda5",
+        "autoAssignDevice": true,
+        "mil": false
+    }, {
+        "name": "2015 Jeep Wrangler Unlimited Sahara",
+        "label": "Ben Burford",
+        "vehicleId": 2691,
+        "vin": "1C4HJWEG4FL529001",
+        "mileage": 159774.0,
+        "lastWaypoint": {
+            "timestamp": "20150220T190447+0000",
+            "latitude": 40.63675,
+            "longitude": -111.48571
+        },
+        "lastRunningTimestamp": "20150221T010420+0000",
+        "year": "2015",
+        "make": "Jeep",
+        "model": "Wrangler",
+        "autoAssignDevice": true,
+        "mil": false
+    }, {
+        "name": "Unidentified Vehicle",
+        "label": "Paul Robertson(new)",
+        "vehicleId": 8854,
+        "deviceId": "013777002274965",
+        "mileage": 427.0,
+        "lastWaypoint": {
+            "timestamp": "20150427T180836+0000",
+            "latitude": 45.334686,
+            "longitude": -75.72609
+        },
+        "lastRunningTimestamp": "20150427T180831+0000",
+        "autoAssignDevice": true,
+        "mil": false
+    }, {
+        "name": "2014 Mazda Mazda2 Sport",
+        "vehicleId": 11660,
+        "deviceId": "C201401288",
+        "vin": "JM1DE1KY5E0181759",
+        "mileage": 39.0,
+        "lastWaypoint": {
+            "timestamp": "20150427T183741+0000",
+            "latitude": 45.361303,
+            "longitude": -75.715953
+        },
+        "running": true,
+        "lastRunningTimestamp": "20150427T183809+0000",
+        "year": "2014",
+        "make": "Mazda",
+        "model": "Mazda2",
+        "autoAssignDevice": true,
+        "mil": false
+    }],
+    "totalRecords": 6
+}
