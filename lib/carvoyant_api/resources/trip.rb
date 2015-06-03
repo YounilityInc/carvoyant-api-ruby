@@ -51,8 +51,8 @@ module CarvoyantAPI
 
     def average_speed
        speed = @mileage.scalar / ((@end_time - @start_time) / 1.hours)
-       speed = Unit "#{speed} mph"
-       imperial? ? speed.to_s("%0.2f") : speed.convert_to('kph').to_s("%0.2f")
+       speed = imperial? ? Unit("#{speed} mph") : Unit("#{speed} kph")
+       speed.to_s("%0.2f")
     end
 
     def max_speed
