@@ -18,12 +18,13 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency("activeresource")
-  spec.add_dependency("ruby-units")
+  spec.add_dependency "activeresource", "~> 4.0.0"
+  spec.add_dependency "ruby-units", "~> 1.4.5"
+
   spec.add_development_dependency "bundler", "~> 1.6"
 
   dev_dependencies = [['mocha', '>= 0.9.8'],
-                      ['fakeweb'], 
+                      ['fakeweb'],
                       ['minitest'],
                       ['rake'],
                       ['byebug'],
