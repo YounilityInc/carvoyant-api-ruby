@@ -1,4 +1,3 @@
-require 'oauth2'
 require 'carvoyant_api/oauth2/config'
 
 

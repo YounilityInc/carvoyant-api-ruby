@@ -6,7 +6,7 @@ require 'byebug'
 require 'timecop'
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-require 'carvoyant_api'
+require 'carvoyant-api-rails'
 
 FakeWeb.allow_net_connect = false
 
