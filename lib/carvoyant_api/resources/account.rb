@@ -3,7 +3,7 @@ module CarvoyantAPI
     include ActiveResource::Formats::JsonFormat
 
     def decode(json)
-      ActiveSupport::JSON.decode(json)["account"]
+      ActiveSupport::JSON.decode(json)['account']
     end
   end
 
@@ -12,8 +12,8 @@ module CarvoyantAPI
     self.primary_key = :id
 
     schema do
-      integer "id"
-      string "firstName", "lastName", "username", "dateCreated", "email", "zipcode", "phone", "timeZone", "preferredContact", "accessToken"
+      integer 'id'
+      string 'firstName', 'lastName', 'username', 'dateCreated', 'email', 'zipcode', 'phone', 'timeZone', 'preferredContact', 'accessToken'
     end
   end
 end
