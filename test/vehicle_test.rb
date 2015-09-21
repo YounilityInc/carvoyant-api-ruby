@@ -53,7 +53,7 @@ class VehicleTest < Minitest::Test
   def test_error_handling
     fake "/v1/api/vehicle/", :method => :post, body: load_fixture('deviceId_error'), status: ["500", "Internal Server Error"]
     vehicle = CarvoyantAPI::Vehicle.create(deviceId: "C201401288")
-    assert_includes vehicle.errors["deviceId"], "The deviceId is used by another vehicle"
+    assert_includes vehicle.errors["deviceId"], "The deviceId is in use by another vehicle."
   end
 end
 

@@ -40,7 +40,6 @@ module CarvoyantAPI
       super
     rescue ActiveResource::ServerError, ActiveResource::ResourceInvalid => error
       @remote_errors = error
-      byebug
       load_remote_errors(@remote_errors, true)
       false
     end
