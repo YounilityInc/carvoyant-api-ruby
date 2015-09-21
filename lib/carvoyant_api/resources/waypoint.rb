@@ -1,5 +1,5 @@
 class CarvoyantAPI::Waypoint
-  attr_accessor :timestamp, :latitude, :longitude
+  attr_reader :timestamp, :latitude, :longitude
 
   def initialize(attributes = {})
     @timestamp = Time.parse(attributes[:timestamp])

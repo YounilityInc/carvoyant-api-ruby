@@ -3,7 +3,7 @@ module CarvoyantAPI
     include ActiveResource::Formats::JsonFormat
 
     def decode(json)
-      ActiveSupport::JSON.decode(json)["vehicle"]
+      ActiveSupport::JSON.decode(json)['vehicle']
     end
   end
 
@@ -14,24 +14,20 @@ module CarvoyantAPI
     attr_reader :last_waypoint, :last_running_timestamp
 
     schema do
-      integer "id", "deviceId"
-      string "label", "name", "vin", "lastWaypoint", "year", "make", "model", "running", "lastRunningTimestamp"
-      float "mileage"
+      integer 'id'
+      string 'label', 'name', 'vin', 'lastWaypoint', 'year', 'make', 'model', 'running', 'deviceId', 'lastRunningTimestamp'
+      float 'mileage'
     end
 
     def initialize(attributes = {}, persisted = false)
       super
-      @last_waypoint = Waypoint.new(lastWaypoint.attributes) if self.attributes["lastWaypoint"]
-      @last_running_timestamp = Time.parse(lastRunningTimestamp) if self.attributes["lastRunningTimestamp"]
-      self.attributes["label"] ||= ""
+      self.attributes['deviceId'] ||= ''
+      @last_waypoint = Waypoint.new(lastWaypoint.attributes) if lastWaypoint
+      @last_running_timestamp = Time.parse(lastRunningTimestamp) if lastRunningTimestamp
     end
 
     def running?
-      if @last_waypoint && @last_running_timestamp
-        @last_waypoint.timestamp >= Time.now - 2.minutes && @last_running_timestamp >= Time.now - 2.minutes
-      else
-        running == "true"
-      end
+      running == 'true'
     end
   end
 end

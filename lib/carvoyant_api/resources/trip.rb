@@ -3,7 +3,7 @@ module CarvoyantAPI
     include ActiveResource::Formats::JsonFormat
 
     def decode(json)
-      ActiveSupport::JSON.decode(json)["trip"]
+      ActiveSupport::JSON.decode(json)['trip']
     end
   end
 
@@ -42,23 +42,23 @@ module CarvoyantAPI
       @in_progress = endTime.nil?
       @data_sets = data.map { |data_set| DataSet.new(data_set.attributes, self.class.current_unit_format) } if data
       @mileage = Unit("#{self.attributes[:mileage] || 0} miles")
-      @mileage = @mileage.convert_to("km") if metric?
+      @mileage = @mileage.convert_to('km') if metric?
     end
 
     def locations
-      @data_sets.each.map { |data_set| data_set.data_points["GEN_WAYPOINT"].try(:waypoint)}.compact
+      @data_sets.each.map { |data_set| data_set.data_points['GEN_WAYPOINT'].try(:waypoint)}.compact
     end
 
     def average_speed
        speed = @mileage.scalar / ((@end_time - @start_time) / 1.hours)
        speed = imperial? ? Unit("#{speed} mph") : Unit("#{speed} kph")
-       speed.to_s("%0.2f")
+       speed.to_s('%0.2f')
     end
 
     def max_speed
-      speed = @data_sets.map { |data_set| data_set.data_points["GEN_SPEED"].try(:value) }.compact.max
+      speed = @data_sets.map { |data_set| data_set.data_points['GEN_SPEED'].try(:value) }.compact.max
       speed = imperial? ? Unit("#{speed} mph") : Unit("#{speed} kph")
-      speed.to_s("%0.2f")
+      speed.to_s('%0.2f')
     end
 
     def mileage
