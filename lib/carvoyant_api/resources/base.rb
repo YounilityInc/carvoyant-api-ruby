@@ -15,16 +15,18 @@ module CarvoyantAPI
         "#{prefix(prefix_options)}#{element_name}/#{query_string(query_options)}"  
       end
 
-      def token_string
-        Thread.current["active.resource.token_strings.#{self.object_id}"]
-      end
-
-      def token_string=(str)
-        Thread.current["active.resource.token_strings.#{self.object_id}"] = str
-      end
-
       def headers
-        super.merge({ 'Authorization' => "Bearer #{token_string}" })
+        if defined?(@headers)
+          @headers
+        elsif superclass != Object && superclass.headers
+          superclass.headers
+        else
+          @headers ||= {}
+        end
+      end
+
+      def activate_session(token)
+        headers.merge!({ 'Authorization' => "Bearer #{token}" })
       end
     end
 
