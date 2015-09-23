@@ -1,7 +1,6 @@
 require 'carvoyant_api/version'
 require 'active_resource'
 require 'carvoyant_api/resources'
-require 'carvoyant_api/oauth2'
 require 'carvoyant_api/errors'
 require 'ruby_units'
 
