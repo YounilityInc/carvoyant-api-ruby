@@ -30,14 +30,6 @@ class VehicleTest < Minitest::Test
     assert_equal vehicle.vin, '1FADP3F2XEL352103'
   end
 
-  def test_running
-    fake "/v1/api/vehicle/2230", method: :get, body: load_fixture('vehicle')
-    vehicle = CarvoyantAPI::Vehicle.find(2230)
-    Timecop.freeze vehicle.last_waypoint.timestamp do
-      assert_equal true, vehicle.running?
-    end
-  end
-
   def test_not_running
     fake "/v1/api/vehicle/2230", method: :get, body: load_fixture('vehicle')
     vehicle = CarvoyantAPI::Vehicle.find(2230)

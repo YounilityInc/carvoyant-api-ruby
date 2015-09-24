@@ -22,6 +22,7 @@ module CarvoyantAPI
     def initialize(attributes = {}, persisted = false)
       super
       self.attributes['deviceId'] ||= ''
+      self.attributes['label'] ||= ''
       @last_waypoint = Waypoint.new(lastWaypoint.attributes) if lastWaypoint
       @last_running_timestamp = Time.parse(lastRunningTimestamp) if lastRunningTimestamp
     end
