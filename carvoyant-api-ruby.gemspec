@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'carvoyant_api/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "carvoyant-api-rails"
+  spec.name          = "carvoyant-api-ruby"
   spec.version       = CarvoyantAPI::VERSION
   spec.authors       = ["Farrukh Abdulkadyrov"]
   spec.email         = ["farrukhabdul@gmail.com"]
