@@ -1,4 +1,5 @@
 # CarvoyantApi
+[![Gem Version](https://badge.fury.io/rb/carvoyant-api-ruby.svg)](http://badge.fury.io/rb/carvoyant-api-ruby)
 
 The Carvoyant API gem allows Ruby developers to programmatically access the Carvoyant Resources
 
