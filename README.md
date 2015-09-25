@@ -1,6 +1,6 @@
 # CarvoyantApi
 
-TODO: Write a gem description
+The Carvoyant API gem allows Ruby developers to programmatically access the Carvoyant Resources
 
 ## Installation
 
